@@ -5,23 +5,30 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import ghozti.racoonadventure.structure.Input;
 
 public class Game extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture img;
+
+	float x,y;
 	
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		//img = new Texture();
+		img = new Texture("raw_textures/player/player idle.png");
 	}
 
 	@Override
 	public void render () {
 		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
+		x = Input.HandleInput(x,y,4,0)[0];
+		y = Input.HandleInput(x,y,4,0)[1];
+
 		batch.begin();
-		batch.draw(img, 0, 0);
+		batch.draw(img, x, y);
 		batch.end();
 	}
 	
