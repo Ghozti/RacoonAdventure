@@ -33,7 +33,7 @@ public class Racoon {
 //*******************METHODS*******************
 
     public void updatePositions(){
-        x = Input.HandleInput(x,y,2,0)[0];
-        y = Input.HandleInput(x,y,2,0)[1];
+        x = Input.HandleInput(x,y,150)[0];
+        y = Input.HandleInput(x,y,150)[1];
     }
 }
