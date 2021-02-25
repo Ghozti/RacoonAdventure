@@ -2,6 +2,7 @@ package ghozti.racoonadventure.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.tools.texturepacker.TexturePacker;
 import ghozti.racoonadventure.Game;
 
 public class DesktopLauncher {
@@ -17,6 +18,8 @@ public class DesktopLauncher {
 		config.resizable = true;
 		//wil pause the game if minized
 		config.pauseWhenMinimized = true;
+		//the fps which the game will run at
+		config.foregroundFPS = 60;
 
 		//TODO add icon
 		//config.addIcon();
