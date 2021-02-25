@@ -11,8 +11,6 @@ public class Game extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture img;
 	Racoon racoon;
-
-	float x,y;
 	
 	@Override
 	public void create () {
