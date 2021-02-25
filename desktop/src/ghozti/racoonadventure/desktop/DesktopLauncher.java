@@ -18,7 +18,7 @@ public class DesktopLauncher {
 		//wil pause the game if minized
 		config.pauseWhenMinimized = true;
 		//the fps which the game will run at
-		config.foregroundFPS = 60;
+		config.foregroundFPS = 144;
 
 		//TODO add icon
 		//config.addIcon();
